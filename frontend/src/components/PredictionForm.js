@@ -31,7 +31,7 @@ const PredictionForm = () => {
 
         try {
             const result = await predictPersistence(formData);
-            setPrediction(result.prediction);
+            setPrediction(result.prediction); // Set the prediction result
         } catch (error) {
             console.error("Error:", error);
             alert("An error occurred while fetching the prediction.");
